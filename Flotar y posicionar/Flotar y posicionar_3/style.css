@@ -1,0 +1,81 @@
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: #444;
+  }
+  
+  div {
+    text-transform: uppercase;
+    font-weight: bold;
+    /* apply box-sizing property and padding to every div, for visual spacing */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .container {
+    background: #ebf7f8;
+    width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .header {
+    background: #ff9c56;
+    width: 96.1%;
+    position: absolute;
+  }
+  
+  .logo {
+    background-color: #f54266;
+    width: 90px;
+    float: right;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .navigation {
+    background: #e85f43;
+    width: 150px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .main-content {
+    overflow: auto;
+    background: #88abc2;
+    color: #fff;
+  }
+  
+  .sidebar {
+    background: #ffbe56;
+    float: left;
+    width: 25%; /* Ocupa el 25% del ancho */
+    height: calc(100vh - 240px); /* Altura total menos header y footer */
+    margin-top: 100px; /* Debajo del header */
+  }
+  
+  .sub-content {
+    background: #49708a;
+    margin-top: 100px; /* Debajo del header */
+    height: 130px;
+    width: 550px;
+    float: right;
+  }
+  
+  .sub-content-2 {
+    background: #355163;
+    height: 130px;
+    width: 550px;
+    float: right;
+    margin-top: 20px; /* Debajo de sub_content */
+  }
+  
+  .footer {
+    background: #aad637;
+    clear: both;
+  }
+  

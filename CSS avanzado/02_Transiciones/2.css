@@ -1,0 +1,21 @@
+body{
+    background-color: #223;
+    color: white;
+}
+
+.box{
+    --size: 200px;
+    background: 
+        linear-gradient(#000a, transparent),
+        blueviolet;
+    width: var(--size);
+    height: var(--size);
+    transition: all 2s;
+}
+
+.box:hover{
+    background: 
+        linear-gradient(#000a, transparent),
+        red;
+    transition: all 0.5s;
+}

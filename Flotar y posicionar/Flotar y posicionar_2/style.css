@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    background-color: #f78f33;
+    height: 10%;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 80px; /* Centra el texto verticalmente */
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Logo y Navegación en el Header */
+.logo {
+    background-color: #f54266;
+    width: 120px;
+    height: 60px;
+    float: left;
+    margin: 10px 0 0 0px; /* Espaciado dentro del header */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px; /* Centrar texto verticalmente */
+}
+
+.navigation {
+    background-color: #e14a40;
+    width: 150px;
+    height: 60px;
+    float: right;
+    margin: 10px 0 0 0; /* Espaciado dentro del header */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px; /* Centrar texto verticalmente */
+}
+
+.sidebar {
+    background-color: #ffbc47;
+    width: 25%; /* Ocupa el 25% del ancho */
+    height: calc(100vh - 160px); /* Altura total menos header y footer */
+    float: left;
+    font-weight: bold;
+    margin-top: 85px; /* Debajo del header */
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #88a7c4;
+    width: 75%; /* Ocupa el 75% del ancho */
+    height: calc(100vh - 160px); /* Altura total menos header y footer */
+    float: left;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 85px; /* Debajo del header */
+}
+
+.footer {
+    background-color: #a4d539;
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 80px; /* Centra el texto verticalmente */
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clear: both; /* Asegura que el footer se sitúe debajo del contenido */
+}

@@ -1,0 +1,79 @@
+/* Nota: Usa %, de manera que el layout sea “responsive” a las modificaciones del tamaño
+horizontal de la ventana del navegador. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+div {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.container {
+  background: #ebf7f8;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  background: #ff9c56;
+  width: 100%;
+  overflow: hidden; /* Para contener los floats */
+}
+
+.logo, .navigation {
+    background-color: #f54266;
+    width: 20%; /* Ocupa el 20% de ancho */
+    height: auto; /* Altura automática */
+    text-align: center;
+}
+
+.navigation {
+  background: #e85f43;
+  width: 65%;
+  float: right;
+}
+
+.main-content {
+  background: #88abc2;
+  color: #fff;
+  width: 100%;
+  overflow: hidden; /* Para contener los floats */
+  display: block; /* Asegura que se comporte como bloque */
+}
+
+.sidebar {
+  background: #ffbe56;
+  float: left;
+  width: 25%; /* Ocupa el 25% del ancho */
+  height: calc(100vh - 29vh); /* Altura total menos header y footer */
+}
+
+.sub-content, .sub-content-2 {
+    background: #49708a;
+    width: 65%; /* Ajusta el ancho para ocupar la derecha */
+    float: right;
+    color: white;
+    font-weight: bold;
+    height: 35%; 
+}
+
+.sub-content-2 {
+  background: #355163;
+}
+
+.footer {
+  background: #aad637;
+  clear: both;
+}

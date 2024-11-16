@@ -1,0 +1,73 @@
+#container {
+  width: 500px;
+  height: 500px;
+  border: solid 1px;
+  position: absolute;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  font-size: 20px;
+  position: absolute;
+  padding: 5px;
+  transition-property: all;
+}
+
+#container:hover .box {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  color: yellow;
+  font-size: 18px;
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.ex01 .box {
+  left: 10px;
+  top: 10px;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+}
+
+#container:hover .ex01 .box {
+  left: 430px;
+  top: 80px;
+}
+
+.ex02 .box {
+  left: 10px;
+  top: 130px;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+}
+
+#container:hover .ex02 .box {
+  left: 430px;
+  top: 10px;
+}
+
+.ex03 .box {
+  left: 10px;
+  top: 250px;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+#container:hover .ex03 .box {
+  left: 430px;
+  top: 220px;
+}
+
+.ex04 .box {
+  left: 10px;
+  top: 370px;
+  transition-duration: 6s;
+}
+
+#container:hover .ex04 .box {
+  left: 430px;
+  top: 150px;
+}

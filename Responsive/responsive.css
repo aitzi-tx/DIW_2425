@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en una columna en pantallas pequeñas */
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 25%; /* En pantallas grandes, la barra lateral ocupa el 25% */
+  }
+  
+  .main-content {
+    background-color: #eaeaea;
+    padding: 20px;
+    width: 75%; /* En pantallas grandes, el contenido principal ocupa el 75% */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Diseño responsive */
+  /* Pantallas pequeñas: las columnas se apilan una debajo de la otra */
+  @media (max-width: 768px) {
+    .sidebar,
+    .main-content {
+      width: 100%; /* Ahora ambos ocupan el 100% del ancho de la pantalla */
+    }
+  
+    nav ul li {
+      display: block; /* Los enlaces del menú se apilan verticalmente */
+      margin: 10px 0;
+    }
+  }
+  

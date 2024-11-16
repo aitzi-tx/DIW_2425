@@ -1,0 +1,31 @@
+/* COLOR MIX */
+
+
+body{
+    display: flex;
+    gap: 5px;
+}
+
+div{
+    height: 400px;
+    flex: 1;
+    border: solid 1px black;
+}
+
+.capa1{
+    background-color: color-mix(in srgb, red, blue);
+}
+
+.capa2{
+    background-color: color-mix(in srgb, yellow 30%, red 40%);
+}
+
+.capa3{
+    --color1: #7a3399;
+    --color2: green;
+    background-color: color-mix(in srgb, var(--color1), var(--color2));
+}
+
+.capa4{
+    background-color: color-mix(in srgb, #12cfb0, #aa1084);
+}

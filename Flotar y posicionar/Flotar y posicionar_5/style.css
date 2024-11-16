@@ -1,0 +1,91 @@
+/* General styles */
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: #444;
+    margin: 0; /* Eliminamos el margen predeterminado del body */
+  }
+  
+  h1,
+  h2,
+  div {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h2{
+    padding: 0;
+  }
+  
+  p {
+    text-transform: none;
+    font-weight: normal;
+  }
+  
+  .container {
+    background-color: #88abc2;
+    font-family: Arial, sans-serif;
+    color: #444;
+    width: 100%;
+  }
+  
+  .header {
+    background-color: #ff9c56;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Para asegurar que el header esté sobre el contenido */
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    background: #ff4d79;
+    float: left;
+  }
+  
+  .navigation {
+    background: #e85f43;
+    float: right;
+  }
+  
+  .main-content {
+    background: #88abc2;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top:100px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure it takes the full width */
+  }
+  
+  .post {
+    background-color: #aad637;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .image {
+    background: #8eb22e;
+    float: left;
+    width: 15%;
+    height: 150px;
+    margin-right: 20px;
+    overflow: hidden; /* Ensure content wraps correctly */
+  }
+  
+  .post_excerpt {
+    background-color: #708c24;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden; /* Ensure content wraps correctly */
+  }
+  

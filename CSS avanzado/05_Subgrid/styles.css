@@ -1,0 +1,38 @@
+/* SUBGRID nos permite heredar las propiedades de la cuadrícula principal */
+/* y modificarlas en la cuadrícula secundaria */
+/* En este caso, la cuadrícula principal tiene 9 columnas y 4 filas */
+/* y la cuadrícula secundaria tiene 3 columnas y 3 filas, con un espacio de 10px entre las filas y columnas */
+/* y un espacio de 20px entre las filas y columnas de la cuadrícula principal */
+/* y un espacio de 30px entre las filas y columnas de la cuadrícula secundaria */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid{
+    background-color: brown;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+}
+
+.item{
+    background-color: aquamarine;
+    display: grid;
+    grid-column: 2/7;
+    grid-row: 2/4;
+    
+    /* Heredamos las propiedades de la cuadrícula principal */
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(3, 80px);
+}
+
+.subitem{
+    background-color: blue;
+    
+    /* Modificamos las propiedades de la cuadrícula secundaria */
+    grid-column: 3/6;
+    grid-row: 1/3;
+}

@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+}
+
+
+.impar td:nth-child(odd), .par td:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.impar td:nth-child(even), .par td:nth-child(odd) {
+  background-color: #615b56;
+}
+
+
+td {
+  border: 1px solid black;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+
+td:hover {
+  background-color: #ffeb3b;
+  cursor: pointer;
+}

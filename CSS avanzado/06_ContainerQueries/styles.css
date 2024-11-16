@@ -1,0 +1,92 @@
+/* CONTAINER QUERIES */
+/* A diferencia de los media queries, los container queries permiten que un contenedor responda a su propio tamaño, en lugar de al tamaño de la ventana del navegador. */
+
+/* Vamos a utilizar container-queries para que la clase image se adapte a su contenedor. */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 800px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+
+    /* Utilizamos container queries para que la clase image se adapte a su contenedor. */
+    container-type: inline-size; /* inline-size: ancho del contenedor. block-size: alto del contenedor. */
+    container-name: image;
+}
+
+.container2{
+    width: 500px;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+
+     /* Utilizamos container queries para que la clase image se adapte a su contenedor. */
+     container-type: inline-size; /* inline-size: ancho del contenedor. block-size: alto del contenedor. */
+     container-name: image;
+}
+
+.container3{
+    width: 300px;
+    border: 1px solid green;
+    margin-bottom: 10px;
+
+     /* Utilizamos container queries para que la clase image se adapte a su contenedor. */
+     container-type: inline-size; /* inline-size: ancho del contenedor. block-size: alto del contenedor. */
+     container-name: image;
+}
+
+@container image (min-width: 300px){
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover; /* La imagen se ajusta al contenedor. */
+    }
+
+    .image .description{
+        display: none; /* Ocultamos el texto. */
+    }
+}
+
+@container image (min-width: 500px){
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .image .description{
+        display: block; /* Mostramos el texto. */
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+}
+
+@container image (min-width: 800px){
+    .image{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image img{
+        width: 100px;
+        height: auto;
+    }
+
+    .image .description{
+        display: block; /* Mostramos el texto. */
+        padding: 10px;
+        background-color: transparent;
+        color: black;
+    }
+}

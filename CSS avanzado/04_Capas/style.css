@@ -1,0 +1,63 @@
+/* Normalmente, el CSS va leyendo los estilos en modo cascada, por lo que aplicará el último estilo */
+/* Con las capas podemos tener un archivo de estilos más organizado */
+
+/* Definimos el nombre de las capas */
+/* Primero se van a aplicar los estilos de la capa base, luego los de la capa dialog y por último los de la capa framework */
+@layer base, dialog, framework;
+/* Podemos cambiar el orden en el que se aplican los estilos */
+/* @layer base, framework, dialog; */
+/* @layer framework, dialog, base; */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo base de los botones */
+@layer base{
+    button{
+        border: none;
+        padding: 10px;
+        min-width: 200px;
+        border-radius: 3px;
+    }
+
+    .p-sm{
+        padding: 3px;
+    }
+    .p-m{
+        padding: 5px;
+    }
+    .p-l{
+        padding: 10px;
+    }
+}
+
+
+/* */
+@layer dialog{
+    button{
+        background: blue;
+        color: white;
+    }
+
+    .p-sm{
+        padding: 5px;
+    }
+    .p-m{
+        padding: 7px;
+    }
+    .p-l{
+        padding: 12px;
+    }
+}
+
+ /* */
+@layer framework{
+    button{
+        background: #efefef;
+        color: black;
+    }
+}

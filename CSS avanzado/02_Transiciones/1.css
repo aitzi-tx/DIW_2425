@@ -1,0 +1,25 @@
+body{
+    background-color: #223;
+    color: white;
+}
+
+.box{
+    --size: 200px;
+    background: red;
+    width: var(--size);
+    height: var(--size);
+    transition: all 0.5s;
+}
+
+.box:hover{
+    background: blue;
+    height: 300px;
+    /* Propiedades de transición */
+    transition-property: all; /* Propiedad a la que se le aplicará la transición */
+    transition-duration: 1s; /* Duración de la transición */
+    transition-timing-function: ease; /* Función de tiempo extra */
+    transition-delay: 0s; /* Retraso de la transición */
+
+    transition: all 1s ease 0s; /* Forma abreviada de las propiedades anteriores */
+    transition: all 2s;
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: #223;
+    color: white;
+}
+
+.box{
+    --size: 200px;
+    background: blueviolet;
+    width: var(--size);
+    height: var(--size);
+    transition: all 2s ease 2s;
+}
+
+.box:hover{
+    background: indigo;
+    height: 400px;
+    transform: translate(200px, 0);
+}
