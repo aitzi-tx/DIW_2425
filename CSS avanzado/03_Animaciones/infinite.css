@@ -1,0 +1,28 @@
+body{
+    position: absolute;
+    top: 0;
+}
+
+i{
+    position:fixed;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:radial-gradient(at 30% 30%,#0000,#000a) red;
+    left:var(--x);
+    top: var(--y);
+  }
+
+  i.start {
+    animation: x 1s, y 0.5s;
+    animation-timing-function:cubic-bezier(.5,-800,.5,800);
+    animation-iteration-count:infinite;
+  }
+
+  @keyframes x { to { left:calc(var(--x) + 1px); } }
+  @keyframes y { to { top :calc(var(--y) + 0.2px); } }
+  
+  
+  /**/
+  d {position:fixed;height:4px;width:4px;background:#222;border-radius:50%}
+  button {border:none;border-radius:10px;padding:10px 20px;cursor:pointer;position:relative;top:10px;left:20px;font-family:sans-serif;font-size:30px;background:#c82629;color:#fff;}
