@@ -1,0 +1,51 @@
+body{
+    background: #223;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 4px solid white;
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: none; /* none, forwards, backwards, both */
+    animation-direction: alternate; /* normal, reverse, alternate, alternate-reverse */
+    animation-play-state: running; /* paused, running */
+/*     animation: change-color 5s linear infinite; */
+}
+
+.box:hover{
+    animation-play-state: paused; /*Cuando pongas el mouse encima se pausa la animación*/
+}
+
+/* @keyframes change-color{
+    from{
+        background: indigo;
+    }
+    to{
+        background: #f00;
+    }
+} */
+
+@keyframes change-color{
+    0%, 50%{
+        background: indigo;
+    }
+    25%{
+        background: #0f0;
+        width: 500px;
+    }
+    50%{
+        background: #00f;
+    }
+    75%{
+        background: #ff0;
+        width: 200px;
+    }
+    100%{
+        background: #f00;
+    }
+}
