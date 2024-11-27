@@ -29,7 +29,7 @@
   left: 10px;
   top: 10px;
   transition-duration: 4s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; /* ease, ease-in, ease-out, ease-in-out, linear */
 }
 
 #container:hover .ex01 .box {

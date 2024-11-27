@@ -33,14 +33,15 @@ body{
 @keyframes change-color{
     0%, 50%{
         background: indigo;
+        width: 300px;
     }
     25%{
         background: #0f0;
         width: 500px;
     }
-    50%{
+    /* 50%{
         background: #00f;
-    }
+    } */
     75%{
         background: #ff0;
         width: 200px;

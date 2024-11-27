@@ -3,6 +3,6 @@
 body {
     /* background-color: hwb(208 0% 0%);  */ /* hwb(hue, white, black) */
     /* background-color: color(display-p3 0.1 0.75 0.75); */ /* display-p3  se basa en srgb pero añade un rango mayor de colores. Los valores van de 0 a 1*/
-    /* background-color: lch(29.2345% 44.2 27); */ /* lch(lightness chroma hue(matiz)) */
+   /* background-color: lch(29.2345% 44.2 27); */ /* lch(lightness chroma hue(matiz)) */
     background-color: lab(52.2345% 40.16 50.99); /* lab(lightness a b) a(red-green) b(blue-yellow)*/
 }

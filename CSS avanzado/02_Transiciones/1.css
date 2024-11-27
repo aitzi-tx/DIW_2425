@@ -21,5 +21,7 @@ body{
     transition-delay: 0s; /* Retraso de la transición */
 
     transition: all 1s ease 0s; /* Forma abreviada de las propiedades anteriores */
-    transition: all 2s;
+/*     transition: all 2s; */
+
+
 }
